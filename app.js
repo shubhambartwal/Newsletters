@@ -51,7 +51,7 @@ const request =https.request(url,options,function(response){
 app.post("/failure",function(req,res){
     res.redirect("/");
 })
-app.listen(3000,function(){
+app.listen(process.env.PORT || 3000,function(){
     console.log("server is running on port 3000 !!!");
 });  
 
